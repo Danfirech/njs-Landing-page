@@ -20,6 +20,7 @@ export default function Header({ className }) {
               spy={true}
               smooth={true}
               offset={-70}
+              duration={500}
               key={i}
             >
               {menuItem.label}

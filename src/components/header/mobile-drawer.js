@@ -48,7 +48,34 @@ export default function MobileDrawer() {
       drawerStyle={styles.drawer}
       closeBtnStyle={styles.close}
     >
-      <Scrollbars autoHide></Scrollbars>
+      <Scrollbars autoHide>
+        <Box sx={styles.content}>
+          <Box sx={styles.menu}>
+            {menuItems.map((menuItem, i) => (
+              <Link
+                activeClass="active"
+                to={menuItem.label}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                key={i}
+              >
+                {menuItem.label}
+              </Link>
+            ))}
+          </Box>
+          <Box sx={styles.menuFooter}>
+            <Box sx={styles.social}>
+              {social.map((socialItem, i) => (
+                <Box as="span" key={i} sx={styles.social.icon}>
+                  <Link to={socialItem.path}>{socialItem.icon}</Link>
+                </Box>
+              ))}
+            </Box>
+          </Box>
+        </Box>
+      </Scrollbars>
     </Drawer>
   );
 }
