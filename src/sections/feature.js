@@ -23,7 +23,7 @@ const data = [
     altText: "Pro Subscription",
     title: "Pro Subscription",
     text:
-      "We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.",
+      "We believe it’s important for everyone to have access to software – especially when it comes to digital learning",
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const data = [
     altText: "Customer Support",
     title: "Customer Support",
     text:
-      "We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.",
+      "We believe it’s important for everyone to have access to software – especially when it comes to digital learning",
   },
 ];
 
